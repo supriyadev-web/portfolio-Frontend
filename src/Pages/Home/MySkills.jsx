@@ -8,7 +8,7 @@ export default function MySkills() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/skills")
+      .get("https://portfolio-backend-lake-iota.vercel.app/api/skills")
       .then((res) => {
         setSkills(res.data);
         setLoading(false);

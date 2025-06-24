@@ -5,7 +5,8 @@ export default function MyPortfolio() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/projects")
+    axios
+      .get("https://portfolio-backend-lake-iota.vercel.app/api/projects")
       .then((res) => setProjects(res.data))
       .catch((err) => console.error(err));
   }, []);
