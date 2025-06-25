@@ -6,7 +6,7 @@ export default function MyPortfolio() {
 
   useEffect(() => {
     axios
-      .get("https://portfolio-backend-lake-iota.vercel.app/api/projects")
+      .get("https://portfolio-backend-nu-beryl.vercel.app/api/projects")
       .then((res) => setProjects(res.data))
       .catch((err) => console.error(err));
   }, []);
