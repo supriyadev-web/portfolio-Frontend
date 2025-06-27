@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function MyPortfolio() {
+export default function Myportfolio() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -12,9 +12,9 @@ export default function MyPortfolio() {
   }, []);
 
   return (
-    <section className="portfolio--section" id="MyPortfolio">
-      <div className="portfolio--container-box">
-        <div className="portfolio--container">
+    <section className="projects--section" id="Myprojects">
+      <div className="projects--container-box">
+        <div className="projects--container">
           <h2 className="section--heading">My Projects</h2>
         </div>
         <div>
@@ -29,22 +29,22 @@ export default function MyPortfolio() {
           </a>
         </div>
       </div>
-      <div className="portfolio--section--container ">
+      <div className="projects--section--container ">
         {projects?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
-            <div className="portfolio--section--img ">
+          <div key={index} className="projects--section--card">
+            <div className="projects--section--img ">
               <img
                 src={item.src}
                 alt="Project Screenshot"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="portfolio--section--card--content">
+            <div className="projects--section--card--content">
               <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
+                <h3 className="projects--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
+              <p className="text-sm projects--link">
                 <a
                   href={item.link}
                   target="_blank"
@@ -62,3 +62,4 @@ export default function MyPortfolio() {
     </section>
   );
 }
+// 

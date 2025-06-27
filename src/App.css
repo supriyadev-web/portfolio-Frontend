@@ -155,7 +155,7 @@ h2 {
   align-items: flex-start;
 }
 
-/* Portfolio, Testimonial & Contact Me */
+/* projects, Testimonial & Contact Me */
 .sub--title {
   color: var(--heading-color);
   font-size: 16px;
@@ -191,7 +191,7 @@ h2 {
   text-decoration: none;
 }
 /* 
-.portfolio-header {
+.projects-header {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -213,6 +213,10 @@ h2 {
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0;
+  text-decoration: none;     /* Removes underline */
+  border-bottom: none;       /* Removes bottom border if any */
+  box-shadow: none;          /* Removes any underline-like shadow */
+  color: inherit;            /* Optional: keeps text color consistent */
 }
 
 /* Navbar Content */
@@ -223,6 +227,8 @@ h2 {
   font-weight: 400;
   line-height: 24px;
   cursor: pointer;
+  
+
 }
 
 .navbar--active-content {
@@ -235,7 +241,7 @@ h2 {
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
+  padding: 60.333px 80.333px 1.333px;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
@@ -288,6 +294,9 @@ h2 {
   height: 100%;
 }
 
+.hero--section-btn{
+  margin-top: 20px;
+}
 /* Hero Section Style Ends */
 
 /* Skills Section Style */
@@ -302,7 +311,7 @@ h2 {
 
 .skills--section--heading {
   color: var(--heading-color);
-  font-size: 40px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 7px;
 }
@@ -388,8 +397,8 @@ h2 {
 
 /* About Us Ends */
 
-/* My Portfolio Starts */
-.portfolio--section {
+/* My projects Starts */
+.projects--section {
   display: flex;
   padding: 12px 85px;
   flex-direction: column;
@@ -397,21 +406,21 @@ h2 {
   gap: 80px;
 }
 
-.portfolio--container-box {
+.projects--container-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.portfolio--container {
+.projects--container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 21.3px;
 }
 
-.portfolio--section--container {
+.projects--section--container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
   align-items: center;                  /* vertical alignment center */
@@ -420,18 +429,18 @@ h2 {
   width: 100%;
 }
 
-.portfolio--section--img {
+.projects--section--img {
   border-radius: 8px;
   width: 100%;
   height: 250px;
   overflow: hidden;
 }
 
-.portfolio--section--img>img {
+.projects--section--img>img {
   width: 100%;
 }
 
-.portfolio--section--card {
+.projects--section--card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -444,7 +453,7 @@ h2 {
   border-top-right-radius: 12px;
 }
 
-.portfolio--section--card--content {
+.projects--section--card--content {
   display: flex;
   padding: 32px;
   flex-direction: column;
@@ -453,11 +462,11 @@ h2 {
   align-self: stretch;
 }
 
-.portfolio--section--title {
+.projects--section--title {
   color: var(--heading-color);
 }
 
-.portfolio--link {
+.projects--link {
   text-decoration: none;
   display: flex;
   gap: 16px;
@@ -466,11 +475,11 @@ h2 {
   font-weight: 600;
 }
 
-.portfolio--section--card:hover path {
+.projects--section--card:hover path {
   stroke: #006b6a;
 }
 
-/* Portfolio Ends */
+/* projects Ends */
 
 /* Testimonial */
 .testimonial--section {
@@ -714,7 +723,7 @@ input[type="checkbox"] {
   .hero--section {
     display: flex;
     flex-direction: column-reverse;
-    padding-bottom: 70px;
+    /* padding-bottom: 30px; */
   }
 
   .hero--section--title,
@@ -725,8 +734,8 @@ input[type="checkbox"] {
 
   .skills--section--container,
   .about--section,
-  .portfolio--section--container,
-  .portfolio--container-box,
+  .projects--section--container,
+  .projects--container-box,
   .footer--link--container,
   .footer--items>ul,
   .footer--content--container {
@@ -735,13 +744,13 @@ input[type="checkbox"] {
   }
 
   .skills--section,
-  .portfolio--container,
+  .projects--container,
   .hero--section--content,
   .hero--section--content--box {
     align-items: center;
   }
 
-  .portfolio--container-box {
+  .projects--container-box {
     gap: 30px;
   }
 
@@ -976,6 +985,19 @@ input[type="checkbox"] {
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
   /* Stack content and image vertically on smaller screens */
+  .hero--section,
+  .projects--section  {
+    padding: 50.333px 30.333px 20.333px;
+
+  }
+  .skills--section {
+    padding: 0.33px 20.33px;
+  }
+  .hero--section-description,
+  .footer--content {
+    text-align: start;
+    font-size:20px;
+  }
   .contact-container {
     flex-direction: column;
     align-items: center;

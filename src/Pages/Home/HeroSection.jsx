@@ -18,17 +18,17 @@ export default function HeroSection() {
           </p>
         </div>
         <Link
-        // onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-primary"
-      >
-       Get in Touch
-      </Link>
+          // onClick={closeMenu}
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="Contact"
+          className="btn btn-primary hero--section-btn"
+        >
+          Get in Touch
+        </Link>
       </div>
       <div className="hero--section--img">
         <img src="./img/hero_img.png" alt="Hero Section" />

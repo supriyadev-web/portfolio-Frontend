@@ -37,7 +37,18 @@ const navigate = useNavigate()
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div class="portfolio-header">
         {/* <!-- <img src="./img/FASHION.svg" alt="Logo" class="logo" /> --> */}
-        <p class="portfolio-text">Portfolio</p>
+        <Link
+          onClick={closeMenu}
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="/"
+          className="portfolio-text"
+        >
+          Portfolio
+        </Link>
       </div>
 
       <a
