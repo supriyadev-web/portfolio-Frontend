@@ -35,10 +35,10 @@ const navigate = useNavigate()
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-   <div class="portfolio-header">
-  {/* <!-- <img src="./img/FASHION.svg" alt="Logo" class="logo" /> --> */}
-  <p class="portfolio-text">Portfolio</p>
-</div>
+      <div class="portfolio-header">
+        {/* <!-- <img src="./img/FASHION.svg" alt="Logo" class="logo" /> --> */}
+        <p class="portfolio-text">Portfolio</p>
+      </div>
 
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -72,10 +72,24 @@ const navigate = useNavigate()
               smooth={true}
               offset={-70}
               duration={500}
-              to="/protfolio"
+              to="/projects"
               className="navbar--content"
             >
-              Portfolio
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="/skills"
+              className="navbar--content"
+            >
+              Skills
             </Link>
           </li>
           <li>
@@ -90,20 +104,6 @@ const navigate = useNavigate()
               className="navbar--content"
             >
               About Me
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="/testimonial"
-              className="navbar--content"
-            >
-              Testimonials
             </Link>
           </li>
         </ul>

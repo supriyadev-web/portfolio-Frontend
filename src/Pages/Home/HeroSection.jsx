@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">
@@ -15,9 +17,18 @@ export default function HeroSection() {
             full-stack developer. Let's collaborate and create something great!
           </p>
         </div>
-        <a href="/contact" className="">
-          <button className="btn btn-primary">Get in Touch</button>
-        </a>
+        <Link
+        // onClick={closeMenu}
+        activeClass="navbar--active-content"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        to="Contact"
+        className="btn btn-primary"
+      >
+       Get in Touch
+      </Link>
       </div>
       <div className="hero--section--img">
         <img src="./img/hero_img.png" alt="Hero Section" />
