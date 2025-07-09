@@ -277,7 +277,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 100.667px;
+  gap: 22.667px;
 }
 
 .skills--section--heading {
@@ -352,10 +352,6 @@ h2 {
 
 /* Skills Style Ends */
 
-
-
-
-
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
   .hero--section--title {
@@ -411,11 +407,9 @@ h2 {
   .hero--section-description {
     text-align: center;
   }
-
-
   .skills--section{
     gap: 20px;
-    padding: 0.33px 27.33px;
+    padding: 53.33px 27.33px;
   }
   .skills--section--container
 {
