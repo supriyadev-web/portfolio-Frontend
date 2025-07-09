@@ -412,6 +412,11 @@ h2 {
     text-align: center;
   }
 
+
+  .skills--section{
+    gap: 20px;
+    padding: 0.33px 27.33px;
+  }
   .skills--section--container
 {
     display: flex;
@@ -425,11 +430,6 @@ h2 {
   }
 
  
-  .skills--section{
-    gap: 20px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
 
  
 
