@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import "./Navbar.css"; // Assuming you have a CSS file for styling
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -39,7 +39,6 @@ const navigate = useNavigate()
         {/* <!-- <img src="./img/FASHION.svg" alt="Logo" class="logo" /> --> */}
         <Link
           onClick={closeMenu}
-          activeClass="navbar--active-content"
           spy={true}
           smooth={true}
           offset={-70}
@@ -83,10 +82,10 @@ const navigate = useNavigate()
               smooth={true}
               offset={-70}
               duration={500}
-              to="/projects"
+              to="/about"
               className="navbar--content"
             >
-              Projects
+              About Me
             </Link>
           </li>
           <li>
@@ -111,10 +110,10 @@ const navigate = useNavigate()
               smooth={true}
               offset={-70}
               duration={500}
-              to="/about"
+              to="/projects"
               className="navbar--content"
             >
-              About Me
+              Projects
             </Link>
           </li>
         </ul>
