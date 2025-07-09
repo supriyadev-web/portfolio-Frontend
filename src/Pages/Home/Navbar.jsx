@@ -35,20 +35,15 @@ const navigate = useNavigate()
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div class="portfolio-header">
-        {/* <!-- <img src="./img/FASHION.svg" alt="Logo" class="logo" /> --> */}
-        <Link
-          onClick={closeMenu}
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          to="/"
-          className="portfolio-text"
-        >
-          Portfolio
-        </Link>
-      </div>
+      <header className="portfolio-header">
+        <div className="logo-box">
+          {/* You can uncomment logo if needed */}
+          {/* <img src="/img/logo.svg" alt="Logo" className="logo" /> */}
+          <Link to="/" onClick={closeMenu} className="portfolio-text">
+            <span className="gradient-text">Portfolio</span>
+          </Link>
+        </div>
+      </header>
 
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}

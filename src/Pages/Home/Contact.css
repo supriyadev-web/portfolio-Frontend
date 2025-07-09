@@ -57,9 +57,9 @@
   .form-input {
     padding: 18px;
     border: none;
-    border-radius: 16px;
-    background: #eef1f2;
-    box-shadow: inset 100px 100px 150px #c0d5e0;
+    border-radius: 10px;
+    background: #cdcdcd;
+    box-shadow: inset 100px 100px 150px #d7e1e6;
     font-size: 16px;
     font-weight: 800;
     color: #333;
