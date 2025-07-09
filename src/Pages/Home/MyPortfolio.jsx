@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "./Project.css"; // Assuming you have a CSS file for <styling></styling>
 
 export default function Myportfolio() {
   const [projects, setProjects] = useState([]);
