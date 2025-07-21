@@ -17,7 +17,7 @@
 /* Grid container */
 .skills--section--container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 👈 fixed to 4 columns */
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -65,6 +65,13 @@
   display: none;
 }
 
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .skills--section--container {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  }
+}
+
 /* Responsive: Small screens */
 @media (max-width: 768px) {
   .skills--section {
@@ -77,12 +84,19 @@
   }
 
   .skills--section--container {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
     gap: 20px;
   }
 
   .skills--section--img {
     width: 56px;
     height: 56px;
+  }
+}
+
+/* Responsive: Extra small (mobile) */
+@media (max-width: 480px) {
+  .skills--section--container {
+    grid-template-columns: repeat(1, 1fr); /* 1 per row */
   }
 }
