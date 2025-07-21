@@ -11,9 +11,10 @@ export default function HeroSection() {
             <span className="typewriter-text">
               <Typewriter
                 words={[
-                  "Full Stack Developer",
-                  "MERN Developer",
-                  "Frontend Engineer"
+                  // "Full Stack Developer",
+                  // "MERN Developer",
+                  "Frontend Engineer",
+                  "Frontend Developer"
                 ]}
                 loop={true}
                 cursor
