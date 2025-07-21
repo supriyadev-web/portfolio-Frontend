@@ -17,7 +17,7 @@
 /* Grid container */
 .skills--section--container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 👈 fixed to 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@
 .skills--section--card {
   background-color: var(--bg-shade);
   border-radius: 12px;
-  padding: 20px;
+  padding: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,14 +42,14 @@
 
 /* Skill image wrapper */
 .skills--section--img {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--white);
   border-radius: 8px;
-  padding: 10px;
+  padding: 6px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,7 +68,7 @@
 /* Responsive: Tablet */
 @media (max-width: 1024px) {
   .skills--section--container {
-    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -84,23 +84,30 @@
   }
 
   .skills--section--container {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
   .skills--section--img {
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
   }
 }
 
 /* Responsive: Extra small (mobile) */
 @media (max-width: 480px) {
   .skills--section--container {
-    grid-template-columns: repeat(1, 1fr); /* 1 per row */
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .skills--section--img {
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+  }
+
+  .section--heading {
+    font-size: 28px;
   }
 }
-  .skills--section--img {
-    width: 48px;
-    height: 48px;
-  }
