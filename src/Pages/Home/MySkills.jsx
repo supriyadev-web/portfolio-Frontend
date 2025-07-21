@@ -28,16 +28,17 @@ export default function MySkills() {
       <div className="portfolio--container">
         <h2 className="section--heading">My Skills</h2>
       </div>
-      <div className="skills--section--container">
+      <div className="skills--section--container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {skills.map((item, index) => (
-          <div key={index} className="skills--section--card">
-            <div className="skills--section--img">
-              <img src={item.src} alt={item.title} />
-            </div>
-            <div className="skills--section--card--content">
-              <h3 className="skills--section--title">{item.title}</h3>
-              <p className="skills--section--description">{item.description}</p>
-            </div>
+          <div
+            key={index}
+            className="skills--section--card p-4 shadow-md rounded-md"
+          >
+            <img
+              src={item.src}
+              alt={item.title}
+              className="w-16 h-16 mx-auto object-contain"
+            />
           </div>
         ))}
       </div>
