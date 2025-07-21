@@ -100,3 +100,7 @@
     grid-template-columns: repeat(1, 1fr); /* 1 per row */
   }
 }
+  .skills--section--img {
+    width: 48px;
+    height: 48px;
+  }
