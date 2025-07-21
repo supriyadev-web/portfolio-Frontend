@@ -22,23 +22,19 @@ export default function AboutMe() {
       <div className="about-container">
         <div className="about-content">
           <p className="about-description">
-            Hi, I'm Supriya Chandanshive, a passionate MERN Stack Developer from
+            Hi, I'm Supriya Chandanshive, a passionate Frontend Developer from
             Pandharpur, Maharashtra. I graduated from Solapur University in 2024
-            with a Bachelor's degree in Computer Engineering. My journey in web
-            development began with a curiosity for how websites work and turned
-            into a deep interest in building full-stack applications that solve
-            real-world problems. I specialize in the MERN stack — MongoDB,
-            Express.js, React.js, and Node.js. With this stack, I’ve built
-            responsive and scalable web applications that focus on both
-            functionality and user experience. I also have hands-on experience
-            with HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, and REST APIs.
+            with a Bachelor's degree in Computer Engineering. My journey into
+            web development started with a curiosity about how websites work and
+            grew into a love for creating beautiful, responsive user interfaces.
+            I specialize in building modern frontend applications using HTML,
+            CSS, Tailwind CSS, Bootstrap, JavaScript, and React.js.
           </p>
 
           <p className="about-description mt-4">
-            I'm currently learning .NET to expand my backend development skills.
-            I believe in continuous learning and always strive to keep myself
-            updated with the latest technologies and best practices in the
-            industry.
+            Currently, I’m learning backend technologies, to become a full stack developer. I enjoy exploring new tools
+            and frameworks, and I believe in continuous learning to stay updated
+            with the latest trends and best practices in the tech world.
           </p>
 
           <div className="about-tabs">
