@@ -107,19 +107,19 @@ export default function AboutMe() {
                   Bootstrap.
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <p className="skill-title">Backend Developer</p>
                 <p className="interest-item">
                   Creating APIs and logic with Node.js, Express, and MongoDB.
                 </p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <p className="skill-title">MERN Stack Developer</p>
                 <p className="interest-item">
                   Building full-stack applications using MongoDB, Express,
                   React, and Node.
                 </p>
-              </div>
+              </div> */}
               <div>
                 <p className="skill-title">UI/UX Design</p>
                 <p className="interest-item">
