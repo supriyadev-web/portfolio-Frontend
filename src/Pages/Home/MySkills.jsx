@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import "./MySkills.css"; // Assuming you have a CSS file for styling
 export default function MySkills() {
   const [skills, setSkills] = useState([]);
   const [loading, setLoading] = useState(true);
