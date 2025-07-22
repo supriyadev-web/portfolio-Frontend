@@ -31,9 +31,20 @@ export default function HeroSection() {
             full-stack developer. Let's collaborate and create something great!
           </p>
         </div>
-        <Link to="Contact" className="btn btn-primary hero--section-btn">
-          Get in Touch
-        </Link>
+        <div className="hero--section-links">
+          <div>
+            {" "}
+            <Link to="Contact" className="btn btn-primary hero--section-btn">
+              Get in Touch
+            </Link>
+          </div>
+          <div>
+            {" "}
+            <Link to="Contact" className="btn btn-primary hero--section-btn">
+              Download Resume
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

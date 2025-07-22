@@ -197,7 +197,13 @@ h2 {
 .hero--section--content--box>button {
   margin-top: 21.333px;
 }
-
+.hero--section-links{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  /* align-items: center;
+  justify-content: center; */
+}
 /* Animation keyframes */
 
 .hero--section--title {
@@ -260,6 +266,15 @@ h2 {
     font-size: 2rem;
     justify-content: center;
   }
+  .hero--section-links{
+  display: block;
+  flex-direction: row;
+  /* align-items: center;
+  justify-content: center; */
+}
+.section--title{
+  margin-top: 100px;
+}
 
   .typewriter-text {
     display: block;
