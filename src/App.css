@@ -267,10 +267,8 @@ h2 {
     justify-content: center;
   }
   .hero--section-links{
-  display: block;
-  flex-direction: row;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
 }
 .section--title{
   margin-top: 100px;
@@ -281,7 +279,11 @@ h2 {
     margin: 0 auto;
   }
 }
-
+@media (max-width: 400px){
+  .hero--section-links{
+    display: block;
+  }
+}
 /* Hero Section Style Ends */
 
 /* Skills Section Style */
@@ -416,6 +418,10 @@ h2 {
     width: 100px;
     display: block;
     margin: 1.5rem auto 0 auto; /* top margin + horizontal centering */
+  }
+  .hero--section-links{
+    align-items: center;
+    justify-content: center;
   }
   .hero--section--title,
   .hero--section-description {
