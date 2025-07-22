@@ -48,9 +48,9 @@
     flex-direction: column;
   }
   
-  .projects--section--card:hover {
+  /* .projects--section--card:hover {
     transform: translateY(-5px);
-  }
+  } */
   
   .projects--section--card--content {
     padding: 1.5rem;
